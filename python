@@ -1,0 +1,32 @@
+import pandas as pd
+
+target_df = pd.read_csv('target.csv')
+sales_df = pd.read_csv('sales.csv')
+sales_person_df = pd.read_csv('sales_person.csv')
+sales_person_region_df = pd.read_csv('sales_person_region.csv')
+reseller_df = pd.read_csv('reseller.csv')
+region_df = pd.read_csv('region.csv')
+product_df = pd.read_csv('product.csv')
+
+
+# Memeriksa nilai yang hilang
+print("Missing values in target.csv:")
+print(target_df.isnull().sum())
+
+print("Missing values in sales.csv:")
+print(sales_df.isnull().sum())
+
+print("Missing values in sales_person.csv:")
+print(sales_person_df.isnull().sum())
+
+print("Missing values in sales_person_region.csv:")
+print(sales_person_region_df.isnull().sum())
+
+print("Missing values in reseller.csv:")
+print(reseller_df.isnull().sum())
+
+print("Missing values in region.csv:")
+print(region_df.isnull().sum())
+
+print("Missing values in product.csv:")
+print(product_df.isnull().sum())
